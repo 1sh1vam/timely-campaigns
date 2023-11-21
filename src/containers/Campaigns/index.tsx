@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import CampaignCard from "../../components/CampaignCard";
 import CampaignFormContainer from "../CampaignFormContainer";
 import { useCampaignStateContext } from "../../context/campaign";
@@ -11,6 +11,12 @@ const Campaigns = () => {
 
   return (
     <div className="w-full h-full flex flex-col justify-between gap-4">
+      {!campaigns.length ? (
+        <p>
+          No campaigns found. Start adding the campaigns by hitting the Add Campaign
+          button below.
+        </p>
+      ) : null}
       <div className="grid sm:grid-cols-2 gap-4 overflow-y-auto">
         {campaigns.map((campaign) => (
           <CampaignCard
