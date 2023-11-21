@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      mulish: ['Mulish', 'sans-serif'],
+      urbanist: ['Urbanist', 'sans-serif']
+    },
   },
   plugins: [],
 }
