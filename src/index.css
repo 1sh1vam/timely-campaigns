@@ -7,6 +7,7 @@
 body {
   font-family: 'Urbanist', sans-serif;
   height: 100vh;
+  position: relative;
 }
 
 #root {
