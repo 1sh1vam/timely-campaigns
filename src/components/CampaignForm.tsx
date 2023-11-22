@@ -23,7 +23,7 @@ const CampaignForm = ({ state, handleSubmit }: CampaignFormProps) => {
   };
 
   return (
-    <div className="flex-1 flex flex-col justify-between">
+    <div className="flex-1 flex flex-col justify-between overflow-y-auto p-3">
       <div className="flex flex-col gap-10">
         <input
           type="text"
